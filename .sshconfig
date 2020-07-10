@@ -1,0 +1,17 @@
+ServerAliveInterval 45
+ServerAliveCountMax 6
+TCPKeepAlive no
+
+Host github.com
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/id_rsa
+
+Host wincloudtop
+  HostName timsneath10.c.googlers.com
+  LocalForward 33890 127.0.0.1:3389
+  User timsneath
+
+Host vmware
+  HostName 192.168.86.29
+  User tim@sneath.org
+

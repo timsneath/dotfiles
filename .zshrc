@@ -91,14 +91,16 @@ export LD_LIBRARY_PATH=$HOME/homebrew/lib:$LD_LIBRARY_PATH
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="code ~/.zshrc"
-alias ohmyzsh="code ~/.oh-my-zsh"
-alias stars="date && dart ~/git/me/github-tracker/repo-stars.dart -n 25"
-alias router="netstat -rnf inet | grep default"
 alias bu="brew update && brew outdated | xargs brew upgrade && brew cleanup -s"
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome &"
-alias wintop="ssh -L 33890:127.0.0.1:3389 timsneath@[hostname]"
+alias ohmyzsh="code ~/.oh-my-zsh"
+alias router="netstat -rnf inet | grep default"
+alias stars="date && dart ~/git/me/github-tracker/repo-stars.dart -n 25"
+alias win="ssh -f -N wincloudtop"
+alias wintop="ssh -f -N wincloudtop"
+alias wincloudtop="ssh -f -N wincloudtop"
 alias yt='youtube-dl -f '\''bestvideo[ext=mp4]+bestaudio[ext=m4a]'\'
+alias zshconfig="code ~/.zshrc"
 
 function gitme() {
     if [[ "$1" == "" ]]
@@ -176,4 +178,3 @@ export PATH="$PATH:$HOME/android/cmdline-tools/tools/bin"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
-
