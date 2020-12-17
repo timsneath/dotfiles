@@ -1,0 +1,79 @@
+{
+    // VS Code general settings
+    "breadcrumbs.enabled": true,
+
+    "diffEditor.ignoreTrimWhitespace": false,
+
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.detectIndentation": false,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 13,
+    "editor.formatOnSave": true,
+    "editor.lineHeight": 18,
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "boundary",
+    "editor.rulers": [80, 120],
+    "editor.smoothScrolling": true,
+    "editor.wordBasedSuggestions": false,
+
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+
+    "settingsSync.ignoredExtensions": [
+        "golang.go"
+    ],
+
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+
+    "window.zoomLevel": 0,
+
+    "workbench.activityBar.visible": true,
+    "workbench.colorTheme": "Default Light+",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "newUntitledFile",
+
+    // Git settings
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+
+    // Formatters
+    "json.format.enable": false,
+    "yaml.format.enable": false,
+
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+
+    // Dart & Flutter settings
+
+    "dart.closingLabels": false,
+    "dart.debugSdkLibraries": false,
+    "dart.debugExternalLibraries": false,
+    "dart.doNotFormat": ["/Users/timsneath/git/flutter/**"],
+    "dart.flutterCreateAndroidLanguage": "kotlin",
+    "dart.flutterCreateIOSLanguage": "swift",
+    "dart.flutterCreateOrganization": "org.sneath",
+    "dart.runPubGetOnPubspecChanges": true,
+    "dart.openDevTools": "flutter",
+    "dart.previewCommitCharacters": true,
+    "dart.previewFlutterUiGuides": true,
+    "dart.previewFlutterUiGuidesCustomTracking": true,
+    "dart.previewLsp": true,
+    "dart.previewHotReloadOnSaveWatcher": true,
+
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false
+    }
+}
