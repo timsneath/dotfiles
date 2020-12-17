@@ -96,9 +96,9 @@ alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome &"
 alias ohmyzsh="code ~/.oh-my-zsh"
 alias router="netstat -rnf inet | grep default"
 alias stars="date && dart ~/git/me/github-tracker/repo-stars.dart -n 25"
-alias win="ssh -f -N wincloudtop"
-alias wintop="ssh -f -N wincloudtop"
-alias wincloudtop="ssh -f -N wincloudtop"
+alias win="ssh -f -N redstone"
+alias wintop="ssh -f -N redstone"
+alias wincloudtop="ssh -f -N redstone"
 alias yt='youtube-dl -f '\''bestvideo[ext=mp4]+bestaudio[ext=m4a]'\'
 alias zshconfig="code ~/.zshrc"
 
@@ -164,17 +164,15 @@ fi
 #   https://g3doc.corp.google.com/company/users/lianmeng/sharing/setup-oh-my-zsh.md
 prompt_hg() {}
 
+# Create PDF of man document and pipe to Preview
+pman() { man -t "$@" | open -f -a Preview; }
+
 source /Users/timsneath/Library/Preferences/org.dystroy.broot/launcher/bash/br
 
 # Add NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "/Users/timsneath/homebrew/opt/nvm/nvm.sh" ] && . "/Users/timsneath/homebrew/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/Users/timsneath/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/Users/timsneath/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-
-# Add Android SDK
-export ANDROID_HOME="$HOME/android"
-export ANDROID_SDK_ROOT="$HOME/android"
-export PATH="$PATH:$HOME/android/cmdline-tools/tools/bin"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
