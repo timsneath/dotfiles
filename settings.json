@@ -30,7 +30,6 @@
     "window.zoomLevel": 0,
 
     "workbench.activityBar.visible": true,
-    "workbench.colorTheme": "Default Light+",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "newUntitledFile",
 
@@ -41,28 +40,27 @@
 
     // Formatters
     "json.format.enable": false,
-    "yaml.format.enable": false,
 
     "[javascript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
 
     // Dart & Flutter settings
-
     "dart.closingLabels": false,
+    "dart.completeFunctionCalls": true,
     "dart.debugSdkLibraries": false,
     "dart.debugExternalLibraries": false,
-    "dart.doNotFormat": ["/Users/timsneath/git/flutter/**"],
+    "dart.doNotFormat": ["$HOME/src/flutter/**"],
     "dart.flutterCreateAndroidLanguage": "kotlin",
     "dart.flutterCreateIOSLanguage": "swift",
     "dart.flutterCreateOrganization": "org.sneath",
     "dart.runPubGetOnPubspecChanges": true,
-    "dart.openDevTools": "flutter",
     "dart.previewCommitCharacters": true,
     "dart.previewFlutterUiGuides": true,
     "dart.previewFlutterUiGuidesCustomTracking": true,
     "dart.previewLsp": true,
     "dart.previewHotReloadOnSaveWatcher": true,
+    "dart.showDartPadSampleCodeLens": true,
 
     "[dart]": {
         "editor.formatOnSave": true,
